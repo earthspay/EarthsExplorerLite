@@ -133,7 +133,7 @@
     @for $i from 1 through 3 {
         &:nth-child(3n+#{$i}) {
             .block-img {
-                background: url('../images/waves-block-#{$i}.svg') no-repeat center center;
+                background: url('../images/earths-block-#{$i}.svg') no-repeat center center;
                 width: 40px;
                 height: 40px;
                 float: left;

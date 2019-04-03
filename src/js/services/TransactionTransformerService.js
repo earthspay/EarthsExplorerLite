@@ -2,7 +2,7 @@ import Currency from '../shared/Currency';
 import Money from '../shared/Money';
 import OrderPrice from '../shared/OrderPrice';
 import DateTime from '../shared/DateTime';
-import {libs} from '@waves/signature-generator';
+import {libs} from '@earths/signature-generator';
 
 const transformMultiple = (currencyService, spamDetectionService, transactions) => {
     const promises = transactions.map(item => transformSingle(currencyService, spamDetectionService, item));
@@ -92,7 +92,7 @@ const transformAssetScript = (currencyService, tx) => {
         return Object.assign(copyMandatoryAttributes(tx), {
             script: tx.script,
             asset,
-            fee: Money.fromCoins(tx.fee, Currency.WAVES)
+            fee: Money.fromCoins(tx.fee, Currency.EARTHS)
         })
     });
 };
@@ -155,7 +155,7 @@ const transformMassTransfer = (currencyService, spamDetectionService, tx) => {
 const transformAlias = (currencyService, tx) => {
     return Promise.resolve(
         Object.assign(copyMandatoryAttributes(tx), {
-            fee: Money.fromCoins(tx.fee, Currency.WAVES),
+            fee: Money.fromCoins(tx.fee, Currency.EARTHS),
             alias: tx.alias
         })
     );
@@ -166,7 +166,7 @@ const transformLease = (currencyService, tx) => {
         return Object.assign(copyMandatoryAttributes(tx), {
             recipient: tx.recipient,
             fee: Money.fromCoins(tx.fee, feeCurrency),
-            amount: Money.fromCoins(tx.amount, Currency.WAVES),
+            amount: Money.fromCoins(tx.amount, Currency.EARTHS),
             status: tx.status
         })
     });
@@ -200,9 +200,9 @@ const transformExchange = (currencyService, tx) => {
         const amount = Money.fromCoins(tx.amount, currencyPair.amountAsset);
 
         return Object.assign(copyMandatoryAttributes(tx), {
-            fee: Money.fromCoins(tx.fee, Currency.WAVES),
-            buyFee: Money.fromCoins(tx.buyMatcherFee, Currency.WAVES),
-            sellFee: Money.fromCoins(tx.sellMatcherFee, Currency.WAVES),
+            fee: Money.fromCoins(tx.fee, Currency.EARTHS),
+            buyFee: Money.fromCoins(tx.buyMatcherFee, Currency.EARTHS),
+            sellFee: Money.fromCoins(tx.sellMatcherFee, Currency.EARTHS),
             price,
             amount,
             total: price.volume(amount),
@@ -224,7 +224,7 @@ const transformOrder = (order, assetPair) => {
         price: OrderPrice.fromBackendPrice(order.price, assetPair),
         timestamp: new DateTime(order.timestamp),
         expiration: new DateTime(order.expiration),
-        fee: Money.fromCoins(order.matcherFee, Currency.WAVES)
+        fee: Money.fromCoins(order.matcherFee, Currency.EARTHS)
     };
 };
 
@@ -232,7 +232,7 @@ const tranformBurn = (currencyService, tx) => {
     return currencyService.get(tx.assetId).then(currency => {
         return Object.assign(copyMandatoryAttributes(tx), {
             amount: Money.fromCoins(tx.amount, currency),
-            fee: Money.fromCoins(tx.fee, Currency.WAVES)
+            fee: Money.fromCoins(tx.fee, Currency.EARTHS)
         });
     });
 };
@@ -241,7 +241,7 @@ const transformReissue = (currencyService, tx) => {
     return currencyService.get(tx.assetId).then(currency => {
         return Object.assign(copyMandatoryAttributes(tx), {
             amount: Money.fromCoins(tx.quantity, currency),
-            fee: Money.fromCoins(tx.fee, Currency.WAVES),
+            fee: Money.fromCoins(tx.fee, Currency.EARTHS),
             reissuable: tx.reissuable,
 
         });
@@ -255,7 +255,7 @@ const transformIssue = (currencyService, tx) => {
     return currencyService.get(c.id).then(currency => {
         return Object.assign(copyMandatoryAttributes(tx), {
             amount: Money.fromCoins(tx.quantity, currency),
-            fee: Money.fromCoins(tx.fee, Currency.WAVES),
+            fee: Money.fromCoins(tx.fee, Currency.EARTHS),
             name: tx.name,
             reissuable: tx.reissuable,
             decimals: tx.decimals,

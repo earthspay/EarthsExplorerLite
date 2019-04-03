@@ -17,10 +17,10 @@ export class AddressService extends ApiClientService {
         return this.getApi().addresses.details(address).then(balanceResponse => {
             const data = balanceResponse.data;
             return {
-                regular: Money.fromCoins(data.regular, Currency.WAVES).toString(),
-                generating: Money.fromCoins(data.generating, Currency.WAVES).toString(),
-                available: Money.fromCoins(data.available, Currency.WAVES).toString(),
-                effective: Money.fromCoins(data.effective, Currency.WAVES).toString()
+                regular: Money.fromCoins(data.regular, Currency.EARTHS).toString(),
+                generating: Money.fromCoins(data.generating, Currency.EARTHS).toString(),
+                available: Money.fromCoins(data.available, Currency.EARTHS).toString(),
+                effective: Money.fromCoins(data.effective, Currency.EARTHS).toString()
             };
         });
     };

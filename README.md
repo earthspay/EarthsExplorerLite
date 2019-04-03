@@ -1,10 +1,10 @@
-# Waves Explorer
+# Earths Explorer
 
-Waves Blockchain Explorer
+Earths Blockchain Explorer
 
 # Demo
 
-Demo is available on https://wavesexplorer.com
+Demo is available on https://explorer.earths.ga
 
 # Setup
 
@@ -24,11 +24,11 @@ yarn install
 yarn start
 ```
 
-Your browser will open local version of Waves Explorer automatically.
+Your browser will open local version of Earths Explorer automatically.
 
 # Build
 
-Build process creates ./dist directory with Waves Explorer distribution that supportes mainnet, testnet and a custom network. 
+Build process creates ./dist directory with Earths Explorer distribution that supportes mainnet, testnet and a custom network. 
 To create the distribution, run:
 ```
 gulp build-official

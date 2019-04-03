@@ -16,10 +16,10 @@ export default class Currency {
         }
     }
 
-    static WAVES = new Currency({
+    static EARTHS = new Currency({
         id: '',
-        displayName: 'Waves',
-        shortName: 'WAVES',
+        displayName: 'Earths',
+        shortName: 'EARTHS',
         precision: 8
     });
 

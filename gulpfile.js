@@ -82,19 +82,19 @@ gulp.task('invalidate-devnet', ['upload-devnet'], function() {
 });
 
 gulp.task('upload-official-staging', ['build-official-staging'], function () {
-    var credentials = awsCredentials('eu-central-1', 'it-1166.wavesexplorer.com');
+    var credentials = awsCredentials('eu-central-1', 'it-1166.explorer.earths.ga');
 
     return publishToS3(credentials, config.releaseDirectory + '/**');
 });
 
 gulp.task('upload-official-prod', ['build-official-prod'], function () {
-    var credentials = awsCredentials('eu-central-1', 'wavesexplorer.com');
+    var credentials = awsCredentials('eu-central-1', 'explorer.earths.ga');
 
     return publishToS3(credentials, config.releaseDirectory + '/**');
 });
 
 gulp.task('upload-devnet', ['build-devnet'], function () {
-    var credentials = awsCredentials('eu-west-1', 'devnet.wavesexplorer.com');
+    var credentials = awsCredentials('eu-west-1', 'devnet.explorer.earths.ga');
 
     return publishToS3(credentials, config.releaseDirectory + '/**');
 });

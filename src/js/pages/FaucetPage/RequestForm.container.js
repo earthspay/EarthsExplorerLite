@@ -92,7 +92,7 @@ export class RequestForm extends React.Component {
                 render={({errors, touched, dirty, isSubmitting, isValidating, validateForm, isValid}) => (
                     <Form>
                         <label className="basic700 margin4">{this.props.networkName} Address</label>
-                        <label className="basic500 margin6 fs12">Fill out your {this.props.networkName} address to receive {this.props.amount} WAVES</label>
+                        <label className="basic500 margin6 fs12">Fill out your {this.props.networkName} address to receive {this.props.amount} EARTHS</label>
 
                         <div className="margin24 fs14">
                             <Field name="address" type="text" placeholder="Address" className="basic500" />
@@ -109,8 +109,8 @@ export class RequestForm extends React.Component {
 
                         <RequestStatus status={this.props.status}/>
 
-                        <button className="submit big long get-waves-btn" type="submit" disabled={!isValid || isSubmitting || isValidating}>
-                            <span>Request {this.props.amount} WAVES</span>
+                        <button className="submit big long get-earths-btn" type="submit" disabled={!isValid || isSubmitting || isValidating}>
+                            <span>Request {this.props.amount} EARTHS</span>
                         </button>
                     </Form>
                 )}

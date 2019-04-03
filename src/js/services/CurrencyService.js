@@ -20,7 +20,7 @@ export class CurrencyService extends ApiClientService {
 
     get = assetId => {
         if (!assetId) {
-            return Promise.resolve(Currency.WAVES);
+            return Promise.resolve(Currency.EARTHS);
         }
 
         return this.currencyCache.get(assetId)

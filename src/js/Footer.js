@@ -2,35 +2,35 @@ import React from 'react';
 
 const socialLinks = [{
     id: 'github',
-    url: 'https://github.com/wavesplatform/'
+    url: 'https://github.com/earthspay/'
 }, {
     id: 'twitter',
-    url: 'https://twitter.com/@wavesplatform'
+    url: 'https://twitter.com/@earthspay'
 }, {
     id: 'facebook',
-    url: 'https://www.facebook.com/wavesplatform/'
+    url: 'https://www.facebook.com/earthspay/'
 }, {
     id: 'discord',
     url: 'https://discord.gg/cnFmDyA'
 }, {
     id: 'telegram',
-    url: 'https://telegram.me/wavesnews'
+    url: 'https://telegram.me/earthsnews'
 }, {
     id: 'reddit',
-    url: 'https://reddit.com/r/Wavesplatform/'
+    url: 'https://reddit.com/r/Earthspay/'
 }];
 
 const Footer = ({version}) => {
     return (
         <div className="menu-footer">
             <div>Version: {version}</div>
-            <div>Brought to you by Waves Team</div>
+            <div>Brought to you by Earths Team</div>
             <div>
                 {socialLinks.map(item =>
                     (<a key={item.id} className={`social ${item.id}`} href={item.url} target="_blank"></a>))}
             </div>
             <div>
-                <a className="fade" href="https://wavesplatform.com" target="_blank">wavesplatform.com</a>
+                <a className="fade" href="https://earths.ga" target="_blank">earths.ga</a>
             </div>
         </div>
     );

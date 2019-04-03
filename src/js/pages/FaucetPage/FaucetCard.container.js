@@ -63,7 +63,7 @@ class FaucetCardContainer extends React.Component {
                     />
                 </div>
                 <div className="basic500 faucet-description fs12">If you experience any problems with the faucet,
-                    please contact <a href="mailto:support@wavesplatform.com" target="_blank">support@wavesplatform.com</a></div>
+                    please contact <a href="mailto:support@earths.ga" target="_blank">support@earths.ga</a></div>
             </React.Fragment>
         );
     }
