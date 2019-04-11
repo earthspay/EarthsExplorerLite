@@ -128,7 +128,7 @@ module.exports = (env, argv) => {
     if (argv.mode === 'production') {
         config.output.filename = '[name].[chunkhash].js';
 
-        googleTrackingId = 'UA-75283398-13';
+        googleTrackingId = 'UA-138153851-1';
         amplitudeApiKey = 'e15743e3459050165886afc936f1a08e';
         sentryDsn = 'https://4ee1bef0c10c44859b069dcb5cf61534@sentry.io/1436851';
     }
