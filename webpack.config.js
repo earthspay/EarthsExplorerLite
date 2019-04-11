@@ -120,7 +120,7 @@ module.exports = (env, argv) => {
             openAnalyzer: false
         }));
 
-        googleTrackingId = 'UA-75283398-17';
+        googleTrackingId = 'UA-138153851-2';
         amplitudeApiKey = '0b3481b4cb40d949738933a57eaeb4fe';
         sentryDsn = 'https://52c223677af144dfabcc0ef333e978aa@sentry.io/1436900';
     }
