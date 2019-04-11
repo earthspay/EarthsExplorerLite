@@ -130,7 +130,7 @@ module.exports = (env, argv) => {
 
         googleTrackingId = 'UA-75283398-13';
         amplitudeApiKey = 'e15743e3459050165886afc936f1a08e';
-        sentryDsn = 'https://9ee88f8e9ec741d5897e64c89a38e4f6@sentry.io/1401739';
+        sentryDsn = 'https://4ee1bef0c10c44859b069dcb5cf61534@sentry.io/1436851';
     }
 
     const network = (env && env.network) || 'mainnet';
