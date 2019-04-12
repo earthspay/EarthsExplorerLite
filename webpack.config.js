@@ -121,7 +121,7 @@ module.exports = (env, argv) => {
         }));
 
         googleTrackingId = 'UA-138153851-2';
-        amplitudeApiKey = '0b3481b4cb40d949738933a57eaeb4fe';
+        amplitudeApiKey = 'ba47be025c8720e9db5534debd05dce5';
         sentryDsn = 'https://52c223677af144dfabcc0ef333e978aa@sentry.io/1436900';
     }
 
@@ -129,7 +129,7 @@ module.exports = (env, argv) => {
         config.output.filename = '[name].[chunkhash].js';
 
         googleTrackingId = 'UA-138153851-1';
-        amplitudeApiKey = 'e15743e3459050165886afc936f1a08e';
+        amplitudeApiKey = 'a9fd31c41b4013529718c928f66f42ba';
         sentryDsn = 'https://4ee1bef0c10c44859b069dcb5cf61534@sentry.io/1436851';
     }
 
