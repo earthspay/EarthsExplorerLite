@@ -2,20 +2,20 @@
     'use strict';
 
     angular.module('web').constant('appConfig', {
-        apiDomain: 'https://nodes.wavesnodes.com',
-        dataServiceBaseUrl: 'https://api.wavesplatform.com/v0',
+        apiDomain: 'https://earthsnodes.earths.ga',
+        dataServiceBaseUrl: 'https://api.earths.ga/v0',
         blockchainName: 'Mainnet',
-        title: 'Waves Explorer',
+        title: 'Earths Explorer',
         nodes: [{
-            url: 'https://nodes.wavesnodes.com',
-            maintainer: 'Waves'
+            url: 'https://earthsnodes.earths.ga',
+            maintainer: 'Earths'
         }],
         peerExplorer: {
-            url: 'https://testnet.wavesexplorer.com',
+            url: 'https://testnet.explorer.earths.ga',
             title: 'TESTNET Explorer'
         },
         wallet: {
-            url: 'https://client.wavesplatform.com',
+            url: 'https://lc.earths.ga',
             title: 'Wallet'
         }
     });

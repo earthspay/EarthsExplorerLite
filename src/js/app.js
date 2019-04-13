@@ -2,5 +2,5 @@
 	'use strict';
 
 	angular.module('web', ['ui.router', 'ui.bootstrap', 'angular-loading-bar', 'angular-growl', 'ngclipboard',
-		'vcRecaptcha', 'waves.core.constants', 'waves.core.services']);
+		'vcRecaptcha', 'earths.core.constants', 'earths.core.services']);
 })();

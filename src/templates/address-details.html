@@ -1,22 +1,22 @@
-<waves-page-header title="Address" subtitle="ctrl.address"></waves-page-header>
+<earths-page-header title="Address" subtitle="ctrl.address"></earths-page-header>
 <div class="row">
     <div class="col-lg-12">
         <div class="profile-user-info profile-user-info-striped">
             <div class="profile-info-row">
                 <div class="profile-info-name width-20">Regular Balance</div>
-                <div class="profile-info-value">{{ctrl.balance.regular|wavelets}}</div>
+                <div class="profile-info-value">{{ctrl.balance.regular|earthlets}}</div>
             </div>
             <div class="profile-info-row">
                 <div class="profile-info-name">Generating Balance</div>
-                <div class="profile-info-value">{{ctrl.balance.generating|wavelets}}</div>
+                <div class="profile-info-value">{{ctrl.balance.generating|earthlets}}</div>
             </div>
             <div class="profile-info-row">
                 <div class="profile-info-name">Available Balance</div>
-                <div class="profile-info-value">{{ctrl.balance.available|wavelets}}</div>
+                <div class="profile-info-value">{{ctrl.balance.available|earthlets}}</div>
             </div>
             <div class="profile-info-row">
                 <div class="profile-info-name">Effective Balance</div>
-                <div class="profile-info-value">{{ctrl.balance.effective|wavelets}}</div>
+                <div class="profile-info-value">{{ctrl.balance.effective|earthlets}}</div>
             </div>
         </div>
     </div>
@@ -45,12 +45,12 @@
                     </thead>
                     <tbody>
                     <tr ng-repeat="item in ctrl.txs">
-                        <td><waves-transaction-ref tx-id="item.id" max-length="7"></waves-transaction-ref></td>
+                        <td><earths-transaction-ref tx-id="item.id" max-length="7"></earths-transaction-ref></td>
                         <td>{{item.type|txtype}}</td>
-                        <td>{{item.timestamp|wavesdate}}</td>
+                        <td>{{item.timestamp|earthsdate}}</td>
 
                         <td ng-if="item.sender!==ctrl.address">
-                            <waves-endpoint-ref endpoint="item.sender" max-length="16"></waves-endpoint-ref>
+                            <earths-endpoint-ref endpoint="item.sender" max-length="16"></earths-endpoint-ref>
                         </td>
                         <td ng-if="item.sender===ctrl.address">
                             <span class="mono">{{item.sender|limitTo:16}}&hellip;</span></td>
@@ -61,7 +61,7 @@
                                   ng-class="{'text-danger':item.outgoing,'text-success':!item.outgoing}"></span>
                         </td>
                         <td ng-if="item.recipient!==ctrl.address">
-                            <waves-endpoint-ref endpoint="item.recipient" max-length="16"></waves-endpoint-ref>
+                            <earths-endpoint-ref endpoint="item.recipient" max-length="16"></earths-endpoint-ref>
                         </td>
                         <td ng-if="item.recipient===ctrl.address">
                             <span class="mono">{{item.recipient|limitTo:16}}&hellip;</span>
@@ -100,7 +100,7 @@
                     </thead>
                     <tbody>
                         <tr ng-repeat="item in ctrl.assets">
-                            <td><waves-transaction-ref tx-id="item.id"></waves-transaction-ref></td>
+                            <td><earths-transaction-ref tx-id="item.id"></earths-transaction-ref></td>
                             <td>{{item.name}}</td>
                             <td>{{item.balance|assetunits:item.decimals}}</td>
                         </tr>
@@ -119,9 +119,9 @@
                     </thead>
                     <tbody>
                     <tr ng-repeat="item in ctrl.dataArray">
-                        <td><waves-data-key text="item.key"></waves-data-key></td>
+                        <td><earths-data-key text="item.key"></earths-data-key></td>
                         <td>{{item.type}}</td>
-                        <td><waves-data-value text="item.value"></waves-data-value></td>
+                        <td><earths-data-value text="item.value"></earths-data-value></td>
                     </tr>
                     </tbody>
                 </table>
@@ -138,11 +138,11 @@
                     <tbody ng-repeat="item in ctrl.scripts">
                         <tr>
                             <td>Compiled Script</td>
-                            <td><waves-compiled-script text="item.script"></waves-compiled-script></td>
+                            <td><earths-compiled-script text="item.script"></earths-compiled-script></td>
                         </tr>
                         <tr>
                             <td>Script Text</td>
-                            <td><waves-script text="item.scriptText"></waves-script></td>
+                            <td><earths-script text="item.scriptText"></earths-script></td>
                         </tr>
                     </tbody>
                 </table>

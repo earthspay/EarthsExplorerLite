@@ -56,7 +56,7 @@
                             return memo + number;
                         }, 0);
 
-                        var currency = tx.assetId ? Currency.create({id: tx.assetId}) : Currency.WAVES;
+                        var currency = tx.assetId ? Currency.create({id: tx.assetId}) : Currency.EARTHS;
                         tx.amountIn = Money.fromCoins(total, currency);
                     }
 

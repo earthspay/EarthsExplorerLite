@@ -2,26 +2,26 @@
     'use strict';
 
     angular.module('web').constant('appConfig', {
-        apiDomain: 'https://pool.testnet.wavesnodes.com',
-        dataServiceBaseUrl: 'https://api.testnet.wavesplatform.com/v0',
-        title: 'Waves Testnet Explorer',
+        apiDomain: 'https://pool.testnet.earthsnodes.earths.ga',
+        dataServiceBaseUrl: 'https://api.testnet.earths.ga/v0',
+        title: 'Earths Testnet Explorer',
         blockchainName: 'Testnet',
         nodes: [
-            {url: 'https://testnode1.wavesnodes.com', maintainer: 'Waves', showAsLink: true},
-            {url: 'https://testnode2.wavesnodes.com', maintainer: 'Waves', showAsLink: true},
-            {url: 'https://testnode3.wavesnodes.com', maintainer: 'Waves', showAsLink: true},
-            {url: 'https://testnode4.wavesnodes.com', maintainer: 'Waves', showAsLink: true}
+            {url: 'https://testnode1.earthsnodes.earths.ga', maintainer: 'Earths', showAsLink: true},
+            {url: 'https://testnode2.earthsnodes.earths.ga', maintainer: 'Earths', showAsLink: true},
+            {url: 'https://testnode3.earthsnodes.earths.ga', maintainer: 'Earths', showAsLink: true},
+            {url: 'https://testnode4.earthsnodes.earths.ga', maintainer: 'Earths', showAsLink: true}
         ],
         faucet: {
-            url: 'https://testnode1.wavesnodes.com/faucet',
+            url: 'https://testnode1.earthsnodes.earths.ga/faucet',
             captchaKey: '6Le9hSgUAAAAAAtIe04SrgDy23PsBZOazfb-li66'
         },
         peerExplorer: {
-            url: 'https://wavesexplorer.com',
+            url: 'https://explorer.earths.ga',
             title: 'MAINNET Explorer'
         },
         wallet: {
-            url: 'https://testnet.wavesplatform.com',
+            url: 'https://testnet.earths.ga',
             title: 'Wallet'
         }
     });

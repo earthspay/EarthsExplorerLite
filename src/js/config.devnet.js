@@ -2,24 +2,19 @@
     'use strict';
 
     angular.module('web').constant('appConfig', {
-        apiDomain: 'http://18.203.15.139:6869',
-        dataServiceBaseUrl: 'https://api.wavesplatform.com/v0',
-        title: 'Waves Devnet Explorer',
+        apiDomain: 'https://devnet.earthsnodes.earths.ga',
+        dataServiceBaseUrl: 'https://api.earths.ga/v0',
+        title: 'Earths Devnet Explorer',
         blockchainName: 'Devnet',
         nodes: [
-            {url: 'http://18.203.15.139:6869', maintainer: 'Waves', showAsLink: true},
-            {url: 'http://34.237.49.199:6869', maintainer: 'Waves', showAsLink: true},
-            {url: 'http://35.157.212.173:6869', maintainer: 'Waves', showAsLink: true},
-            {url: 'http://52.28.115.7:6869', maintainer: 'Waves', showAsLink: true},
-            {url: 'http://13.229.61.140:6869', maintainer: 'Waves', showAsLink: true},
-            {url: 'http://52.192.190.54:6869', maintainer: 'Waves', showAsLink: true}
+            {url: 'https://devnet.earthsnodes.earths.ga', maintainer: 'Earths', showAsLink: true}
         ],
         peerExplorer: {
-            url: 'http://devnet.wavesexplorer.com',
+            url: 'http://devnet.explorer.earths.ga',
             title: 'Devnet Explorer'
         },
         wallet: {
-            url: 'https://testnet.wavesplatform.com',
+            url: 'https://testnet.earths.ga',
             title: 'Wallet'
         }
     });

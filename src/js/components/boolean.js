@@ -3,7 +3,7 @@
 
     angular
         .module('web')
-        .component('wavesBoolean', {
+        .component('earthsBoolean', {
             bindings: {
                 value: '<'
             },

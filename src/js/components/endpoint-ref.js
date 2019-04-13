@@ -4,7 +4,7 @@
     var ADDRESS_PREFIX = 'address:';
 
 
-    function WavesEndpointRefController(aliasService) {
+    function EarthsEndpointRefController(aliasService) {
         var ctrl = this;
 
         function adjustBindings() {
@@ -42,8 +42,8 @@
 
     angular
         .module('web')
-        .component('wavesEndpointRef', {
-            controller: ['aliasService', WavesEndpointRefController],
+        .component('earthsEndpointRef', {
+            controller: ['aliasService', EarthsEndpointRefController],
             bindings: {
                 endpoint: '<',
                 maxLength: '<?'

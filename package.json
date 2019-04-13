@@ -1,10 +1,10 @@
 {
-  "name": "waves-explorer-lite",
+  "name": "earths-explorer-lite",
   "version": "1.1.9",
-  "description": "Waves blockchain information tool",
+  "description": "Earths blockchain information tool",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wavesplatform/WavesExplorerLite.git"
+    "url": "https://github.com/earthspay/EarthsExplorerLite.git"
   },
   "license": "Apache-2.0",
   "dependencies": {
@@ -21,7 +21,7 @@
     "ngclipboard": "^2.0.0",
     "restangular": "^1.6.1",
     "underscore": "^1.8.3",
-    "wavesplatform-core-js": "git://github.com/wavesplatform/wavesplatform.core.js.git#master"
+    "earthspay-core-js": "git://github.com/earthspay/earthspay.core.js.git#master"
   },
   "devDependencies": {
     "del": "^3.0.0",

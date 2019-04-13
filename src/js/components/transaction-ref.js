@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    function WavesTransactionRefController() {
+    function EarthsTransactionRefController() {
         var ctrl = this;
 
         ctrl.$onInit = function () {
@@ -17,8 +17,8 @@
 
     angular
         .module('web')
-        .component('wavesTransactionRef', {
-            controller: WavesTransactionRefController,
+        .component('earthsTransactionRef', {
+            controller: EarthsTransactionRefController,
             bindings: {
                 txId: '<',
                 maxLength: '<?',

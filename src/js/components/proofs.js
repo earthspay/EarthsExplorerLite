@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    function WavesProofsController() {
+    function EarthsProofsController() {
         var ctrl = this;
 
         ctrl.$onInit = function () {
@@ -10,8 +10,8 @@
 
     angular
         .module('web')
-        .component('wavesProofs', {
-            controller: WavesProofsController,
+        .component('earthsProofs', {
+            controller: EarthsProofsController,
             bindings: {
                 proofs: '<'
             },

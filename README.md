@@ -1,10 +1,10 @@
-# Waves Explorer Lite
+# Earths Explorer Lite
 
-Waves Testnet Blockchain Explorer
+Earths Testnet Blockchain Explorer
 
 # Demo
 
-Demo is available on http://testnet.wavesexplorer.com
+Demo is available on http://testnet.explorer.earths.ga
 
 # Setup
 

@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    function WavesScriptController() {
+    function EarthsScriptController() {
         var ctrl = this;
 
         ctrl.$onInit = function () {
@@ -10,8 +10,8 @@
 
     angular
         .module('web')
-        .component('wavesScript', {
-            controller: WavesScriptController,
+        .component('earthsScript', {
+            controller: EarthsScriptController,
             bindings: {
                 maxLength: '<?',
                 text: '<?'

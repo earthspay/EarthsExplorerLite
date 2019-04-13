@@ -3,7 +3,7 @@
 
     angular
         .module('web')
-        .component('wavesPageHeader', {
+        .component('earthsPageHeader', {
             bindings: {
                 title: '@',
                 subtitle: '<'

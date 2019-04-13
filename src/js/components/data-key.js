@@ -3,7 +3,7 @@
 
     var DEFAULT_MAX_LENGTH = 32;
 
-    function WavesDataKeyController() {
+    function EarthsDataKeyController() {
         var ctrl = this;
 
         ctrl.$onInit = function () {
@@ -13,8 +13,8 @@
 
     angular
         .module('web')
-        .component('wavesDataKey', {
-            controller: WavesDataKeyController,
+        .component('earthsDataKey', {
+            controller: EarthsDataKeyController,
             bindings: {
                 maxLength: '<?',
                 text: '<?'

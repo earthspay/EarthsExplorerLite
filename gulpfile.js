@@ -32,7 +32,7 @@ const config = {
             'node_modules/angular-growl-v2/build/angular-growl.js',
             'node_modules/clipboard/dist/clipboard.js',
             'node_modules/ngclipboard/dist/ngclipboard.js',
-            'node_modules/wavesplatform-core-js/distr/wavesplatform-core.js'
+            'node_modules/earthspay-core-js/distr/earthspay-core.js'
         ],
         version: '1.6.10' // change this version if libraries are updated or changed
     },
@@ -207,19 +207,19 @@ gulp.task('distr', ['clean', 'patch-html'], function () {
 });
 
 gulp.task('publish-testnet', ['distr'], function () {
-    var credentials = awsCredentials('eu-central-1', 'testnet.wavesexplorer.com');
+    var credentials = awsCredentials('eu-central-1', 'testnet.explorer.earths.ga');
 
     return publishToS3(credentials, config.releaseDirectory + '/testnet/**');
 });
 
 gulp.task('publish-mainnet', ['distr'], function () {
-    var credentials = awsCredentials('eu-central-1', 'wavesexplorer.com');
+    var credentials = awsCredentials('eu-central-1', 'explorer.earths.ga');
 
     return publishToS3(credentials, config.releaseDirectory + '/mainnet/**');
 });
 
 gulp.task('publish-devnet', ['distr'], function () {
-    var credentials = awsCredentials('eu-west-1', 'devnet.wavesexplorer.com');
+    var credentials = awsCredentials('eu-west-1', 'devnet.explorer.earths.ga');
 
     return publishToS3(credentials, config.releaseDirectory + '/devnet/**');
 });
